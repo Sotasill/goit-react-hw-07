@@ -1,0 +1,46 @@
+.wrapper {
+     border: 2px solid #BCC5FF;
+    background-color: #e7a61a;
+    min-width: 800px;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+    
+box-shadow: -2px 7px 30px 0px rgba(0,0,0,0.75);
+
+padding: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.label {
+    height: 40px;
+     font-size: 40px;
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #BCC5FF;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.input {height: 40px;
+    background-color:  #e7a61a;
+    box-shadow: -2px 7px 30px 0px rgba(0,0,0,0.75);
+    transition: all;
+    }
+
+
+ .input:hover, .input:active {
+    outline: #e7a61a;
+    background-color: transparent;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.input::-webkit-input-placeholder { color: #000; font-size: 20px; text-align: center; }
+
+.input:focus::-webkit-input-placeholder { color: transparent; }   
