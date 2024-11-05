@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectError, selectLoading } from "../../redux/contactsSlice";
 
 import { useEffect } from "react";
-import fetchContacts from "../../redux/contactsApi"
+import {getContacts} from "../../redux/contactsApi"
 
 function App() {
   const loading = useSelector(selectLoading);
@@ -16,7 +16,7 @@ function App() {
   const dispatch = useDispatch();
 
    useEffect(() => {
-    dispatch(fetchContacts())
+    dispatch(getContacts())
   }, [dispatch])
 
  
