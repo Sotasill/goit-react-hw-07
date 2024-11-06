@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import ValidationShema from "../../validationshema"; // Ensure this is correctly imported
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsApi";
+import { addContact } from "../../redux/contactsOps";
 
 const initialValues = {
   name: "",
@@ -71,12 +71,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-
-
-
-
-
-
-
-  
-

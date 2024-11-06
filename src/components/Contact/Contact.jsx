@@ -1,10 +1,9 @@
 import css from "./Contact.module.css";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsApi";
+import { deleteContact } from "../../redux/contactsOps";
 
 function Contact({ data }) {
   const { id, name, number } = data; // Извлечение свойств из объекта data
-  
 
   const dispatch = useDispatch();
   const handleDelete = () => {
