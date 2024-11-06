@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectError, selectLoading } from "../../redux/contactsSlice";
 
 import { useEffect } from "react";
-import {getContacts} from "../../redux/contactsApi"
+import { fetchContacts } from "../../redux/contactsApi";
 
 function App() {
   const loading = useSelector(selectLoading);
@@ -16,7 +16,7 @@ function App() {
   const dispatch = useDispatch();
 
    useEffect(() => {
-    dispatch(getContacts())
+    dispatch(fetchContacts());
   }, [dispatch])
 
  
@@ -26,8 +26,8 @@ function App() {
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
-        {loading && <Loader>Loading tasks, please wait</Loader>}
-      {error && <Error>Error message</Error>}
+        {loading && <Loader>Loading, please wait</Loader>}
+      {error && <Error>Error!!!! </Error>}
       <ContactList  />
     </div>
   );
